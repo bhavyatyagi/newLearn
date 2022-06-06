@@ -1,0 +1,63 @@
+# 1. Objects, 2. Lists, 3. Key-Value Pairs, 4. Comments
+
+# KV Pairs
+app: user-authentication
+port: 8000
+version: 1.7
+
+# Objects
+microservice:
+  app: user-authentication
+  port: 8000
+  version: 1.7
+
+# Lists Demo
+microservice:
+  - app: user-authentication
+    port: 8000
+    version: 1.7
+  - app: shopping-mall
+    port: 8000
+    version: 
+      - 1.7
+      - 2.8
+  - app: user-authentication
+    port: 8000
+    version: [8001,9002,"someDemoString"]
+    deployed: on
+
+# boolean
+# yes/no on/off or true/false
+
+# Multiline strings
+
+multilineDemo: |
+  this is a multi
+  line string
+  next line
+
+singleLineDemo: >
+  this is a single line
+  just being showed
+  ona different line
+  first line only
+
+
+# Placeholders
+# double curly brackets
+metdata:
+  name: {{ .Values.service.name }}
+
+# environment variables
+command:
+ ['/bin/sh','-ec',"mysql -h 127.0.0.1 -u root -p$MYSQL_ROOT_PASSWORD -e 'SELECT 1'"]
+
+
+# Multiple yaml documents
+
+---
+
+microservice:
+  - app: user-authentication
+    port: 8000
+    version: 1.7
