@@ -1,0 +1,18 @@
+# What SQLite?
+1. SQLite is an in-process library that implements a self-contained, serverless, zero-configuration, transactional SQL database engine.
+2. It is a database, which is zero-configured, which means like other databases you do not need to configure it in your system.
+3. SQLite engine is not a standalone process like other databases, you can link it statically or dynamically as per your requirement with your application. 
+4. SQLite accesses its storage files directly.
+
+# Why SQLite?
+1. SQLite does not require a separate server process or system to operate (serverless).
+2. SQLite comes with zero-configuration, which means no setup or administration needed.
+3. A complete SQLite database is stored in a single cross-platform disk file.
+4. SQLite is very small and light weight, less than 400KiB fully configured or less than 250KiB with optional features omitted.
+5. SQLite is self-contained, which means no external dependencies.
+6. SQLite transactions are fully ACID-compliant, allowing safe access from multiple processes or threads.
+7. SQLite supports most of the query language features found in SQL92 (SQL2) standard.
+8. SQLite is written in ANSI-C and provides simple and easy-to-use API.
+9. SQLite is available on UNIX (Linux, Mac OS-X, Android, iOS) and Windows (Win32, WinCE, WinRT).
+
+# Reference: Tutorials Point, YouTube
