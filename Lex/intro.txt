@@ -1,0 +1,51 @@
+# Syntax and Pattern for Lex
+
+1. Declaration/Definition section
+%{
+    #include<...
+%}
+
+2. Transition Rule section
+%%
+    Rules/Patterns
+%%
+
+3. User Subroutine section
+main{
+    ...
+}
+
+
+# An example of Lex
+
+%{
+#include<stdio.h>
+int positiveInt=0;
+int negativeInt=0;
+%}
+
+%%
+    // Regular Expressions
+    [-][0-9]+[negativeInt++;]
+    // etc.
+%%
+
+main(int argc, char *argv[])
+{
+    if(argc!-2)
+    {
+        printf("Usage: %s <input_file> <Source File>\n", argv[0]);
+        exit(0);
+    }
+}
+
+# Extension is 
+    .l 
+# Execution is 
+    lex input_file.l
+-> After this we will get lex.yy.c file which is the Lexual Analyzer Genrator by the program
+-> and then we can compile this file using gcc command
+    gcc lex.yy.c -o lex
+    ./lex input_file.l
+
+    Normally like we do for other c programs 

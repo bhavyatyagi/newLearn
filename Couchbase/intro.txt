@@ -1,0 +1,9 @@
+# Couchbase Intro
+
+1. Couchbase is a distributed document database (JSON), with all the desired capabilities of a traditional DBMS;
+2. distributed SQL, transactions, ACID guarantees; and much more. It is a hosted service and a product for hybrid (on-premises and cloud) deployments of mission-critical applications.
+
+# Resources
+
+1. https://www.couchbase.com/docs/couchbase-server/current/sdk/python-sdk/intro.html
+2. https://www.youtube.com/watch?v=7OKSgtDt1lo

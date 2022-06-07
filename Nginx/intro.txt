@@ -1,0 +1,10 @@
+# Intro
+
+- Nginx : Nginx, pronounced like “engine-ex”, is an open-source web server that, since its initial success as a web server, is now also used as a reverse proxy, HTTP cache, and load balancer.
+- Reverse Proxy: A reverse proxy server is a type of proxy server that typically sits behind the firewall in a private network 
+    and directs client requests to the appropriate backend server. 
+    A reverse proxy provides an additional level of abstraction and control to ensure the smooth flow of network traffic between clients and servers.
+# Resources
+
+1. Nginx Node-JS full deployment: https://gist.github.com/bradtraversy/cd90d1ed3c462fe3bddd11bf8953a896
+
